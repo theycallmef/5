@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         JobListing job1 = new JobListing("Website Development",
-                "Create a company website", 500);
+                "Create a company website", 5000);
         JobListing job2 = new JobListing("Mobile App",
                 "Build Android application", 800);
 
