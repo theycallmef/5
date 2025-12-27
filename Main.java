@@ -17,14 +17,11 @@ public class Main {
         System.out.println(f2);
         System.out.println(portal);
 
-        // Сравнение вакансий
         if (job1.getBudget() > job2.getBudget()) {
             System.out.println("Job 1 has higher budget");
         } else {
             System.out.println("Job 2 has higher budget");
         }
-
-        // Сравнение фрилансеров
         if (f1.getRating() > f2.getRating()) {
             System.out.println(f1.getName() + " has higher rating");
         } else {
