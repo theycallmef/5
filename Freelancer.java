@@ -32,6 +32,12 @@ public class Freelancer {
     public void setRating(double rating) {
         this.rating = rating;
     }
+    public void setBudget(double budget) {
+        if (budget < 0) {
+            throw new IllegalArgumentException("Budget cannot be negative");
+        }
+        this.budget = budget;
+    }
 
     @Override
     public String toString() {
