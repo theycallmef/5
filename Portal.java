@@ -1,10 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
 public class Portal {
     private String portalName;
-    private int jobCount;
+    private List<JobListing> jobs;
+    private List<Freelancer> freelancers;
 
-    public Portal(String portalName, int jobCount) {
+    public Portal(String portalName) {
         this.portalName = portalName;
-        this.jobCount = jobCount;
+        this.jobs = new ArrayList<>();
+        this.freelancers = new ArrayList<>();
     }
 
     public String getPortalName() {
@@ -15,24 +19,27 @@ public class Portal {
         this.portalName = portalName;
     }
 
-    public int getJobCount() {
-        return jobCount;
+    public void addJob(JobListing job) {
+        jobs.add(job);
     }
 
-    public void setJobCount(int jobCount) {
-        this.jobCount = jobCount;
+    public void addFreelancer(Freelancer freelancer) {
+        freelancers.add(freelancer);
+    }
+    public List<JobListing> getJobs() {
+        return jobs;
     }
 
-    public void postJob() {
-        jobCount++;
-        System.out.println("New job posted. Total jobs: " + jobCount);
+    public List<Freelancer> getFreelancers() {
+        return freelancers;
     }
 
     @Override
     public String toString() {
         return "Portal{" +
                 "portalName='" + portalName + '\'' +
-                ", jobCount=" + jobCount +
+                ", jobs=" + jobs.size() +
+                ", freelancers=" + freelancers.size() +
                 '}';
     }
 }
