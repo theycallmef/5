@@ -28,8 +28,10 @@ public class JobListing {
     public double getBudget() {
         return budget;
     }
-
     public void setBudget(double budget) {
+        if (budget < 0) {
+            throw new IllegalArgumentException("Budget cannot be negative");
+        }
         this.budget = budget;
     }
 
