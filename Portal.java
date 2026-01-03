@@ -29,7 +29,6 @@ public class Portal {
     public List<JobListing> getJobs() {
         return jobs;
     }
-
     public List<Freelancer> getFreelancers() {
         return freelancers;
     }
