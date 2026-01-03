@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    public static <portal> void main(String[] args) {
 
         JobListing job1 = new JobListing("Website Development",
                 "Create a company website", 5000);
@@ -10,6 +10,16 @@ public class Main {
         Freelancer f2 = new Freelancer("Bob", "Web Development", 4.3);
 
         Portal portal = new Portal("FreelanceHub", 2);
+
+        portal.addJob(job1);
+        portal.addJob(job2);
+
+        portal.addFreelancer(f1);
+        portal.addFreelancer(f2);
+
+        System.out.println(portal.searchJobsByKeyword("app"));
+        System.out.println(portal.searchFreelancersBySkill("java"));
+
 
         System.out.println(job1);
         System.out.println(job2);
@@ -26,8 +36,4 @@ public class Main {
             System.out.println(f1.getName() + " has higher rating");
         } else {
             System.out.println(f2.getName() + " has higher rating");
-        }
-
-        portal.postJob();
-    }
-}
+        }}}

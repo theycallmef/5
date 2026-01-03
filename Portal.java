@@ -29,6 +29,16 @@ public class Portal {
     public List<Freelancer> getFreelancers() {
         return freelancers;
     }
+    public List<Freelancer> searchFreelancersBySkill(String skill) {
+        List<Freelancer> result = new ArrayList<>();
+        for (Freelancer f : freelancers) {
+            if (f.getSkill().toLowerCase().contains(skill.toLowerCase())) {
+                result.add(f);
+            }
+        }
+        return result;
+    }
+
     public List<JobListing> searchJobsByKeyword(String keyword) {
         List<JobListing> result = new ArrayList<>();
         for (JobListing job : jobs) {
@@ -48,5 +58,8 @@ public class Portal {
                 ", jobs=" + jobs.size() +
                 ", freelancers=" + freelancers.size() +
                 '}';
+    }
+
+    public void postJob() {
     }
 }
