@@ -1,9 +1,23 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Comparator;
+
+
 public class Portal {
     private String portalName;
     private List<JobListing> jobs;
     private List<Freelancer> freelancers;
+public void sortJobsByBudgetAsc() {
+    jobs.sort(Comparator.comparingDouble(JobListing::getBudget));
+}
+public void sortJobsByBudgetDesc() {
+    jobs.sort(Comparator.comparingDouble(JobListing::getBudget).reversed());
+}
+public void sortFreelancersByRatingDesc() {
+    freelancers.sort(Comparator.comparingDouble(Freelancer::getRating).reversed());
+}
+
 
     public Portal(String portalName, int i) {
         this.portalName = portalName;
