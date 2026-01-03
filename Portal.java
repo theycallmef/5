@@ -5,7 +5,7 @@ public class Portal {
     private List<JobListing> jobs;
     private List<Freelancer> freelancers;
 
-    public Portal(String portalName) {
+    public Portal(String portalName, int i) {
         this.portalName = portalName;
         this.jobs = new ArrayList<>();
         this.freelancers = new ArrayList<>();
@@ -26,12 +26,20 @@ public class Portal {
     public void addFreelancer(Freelancer freelancer) {
         freelancers.add(freelancer);
     }
-    public List<JobListing> getJobs() {
-        return jobs;
-    }
     public List<Freelancer> getFreelancers() {
         return freelancers;
     }
+    public List<JobListing> searchJobsByKeyword(String keyword) {
+        List<JobListing> result = new ArrayList<>();
+        for (JobListing job : jobs) {
+            if (job.getTitle().toLowerCase().contains(keyword.toLowerCase())
+                    || job.getDescription().toLowerCase().contains(keyword.toLowerCase())) {
+                result.add(job);
+            }
+        }
+        return result;
+    }
+
 
     @Override
     public String toString() {
