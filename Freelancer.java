@@ -4,7 +4,7 @@ public class Freelancer extends User {
     private double rating;
 
     public Freelancer(String name, String skill, double rating) {
-        super(name);          // имя передаём в User
+        super(name);
         this.skill = skill;
         setRating(rating);
     }
