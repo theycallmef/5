@@ -1,20 +1,17 @@
-public class Freelancer {
-    private String name;
+public class Freelancer extends User {
+
     private String skill;
     private double rating;
 
     public Freelancer(String name, String skill, double rating) {
-        this.name = name;
+        super(name);          // имя передаём в User
         this.skill = skill;
-        this.rating = rating;
+        setRating(rating);
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    @Override
+    public String getRole() {
+        return "FREELANCER";
     }
 
     public String getSkill() {
@@ -30,13 +27,17 @@ public class Freelancer {
     }
 
     public void setRating(double rating) {
+        if (rating < 0 || rating > 5) {
+            throw new IllegalArgumentException("Rating must be between 0 and 5");
+        }
         this.rating = rating;
     }
 
     @Override
     public String toString() {
         return "Freelancer{" +
-                "name='" + name + '\'' +
+                "name='" + getName() + '\'' +
+                ", role='" + getRole() + '\'' +
                 ", skill='" + skill + '\'' +
                 ", rating=" + rating +
                 '}';
