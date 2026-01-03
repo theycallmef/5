@@ -49,7 +49,24 @@ public class Portal {
         }
         return result;
     }
-
+    public List<JobListing> filterJobsByMinBudget(double minBudget) {
+        List<JobListing> result = new ArrayList<>();
+        for (JobListing job : jobs) {
+            if (job.getBudget() >= minBudget) {
+                result.add(job);
+            }
+        }
+        return result;
+    }
+    public List<Freelancer> filterFreelancersByMinRating(double minRating) {
+        List<Freelancer> result = new ArrayList<>();
+        for (Freelancer f : freelancers) {
+            if (f.getRating() >= minRating) {
+                result.add(f);
+            }
+        }
+        return result;
+    }
 
     @Override
     public String toString() {
