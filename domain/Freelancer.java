@@ -1,3 +1,5 @@
+package domain;
+
 public class Freelancer extends User {
 
     private String skill;

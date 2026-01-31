@@ -1,8 +1,9 @@
-import java.sql.*;
+import config.DatabaseConnection;
+import domain.JobListing;
 
+import java.sql.*;
 public class JobListingDAO {
 
-    // CREATE (write)
     public void addJob(JobListing job) throws SQLException {
         String sql =
                 "INSERT INTO job_listing (title, description, budget) VALUES (?, ?, ?)";
@@ -17,7 +18,6 @@ public class JobListingDAO {
         stmt.executeUpdate();
     }
 
-    // READ
     public void getAllJobs() throws SQLException {
         String sql = "SELECT * FROM job_listing";
 
@@ -34,7 +34,6 @@ public class JobListingDAO {
         }
     }
 
-    // UPDATE
     public void updateBudget(int id, double newBudget) throws SQLException {
         String sql =
                 "UPDATE job_listing SET budget = ? WHERE id = ?";
@@ -48,7 +47,6 @@ public class JobListingDAO {
         stmt.executeUpdate();
     }
 
-    // DELETE
     public void deleteJob(int id) throws SQLException {
         String sql = "DELETE FROM job_listing WHERE id = ?";
 

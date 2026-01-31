@@ -1,3 +1,7 @@
+import domain.Freelancer;
+import domain.JobListing;
+import domain.Portal;
+
 public class Main {
     public static <portal> void main(String[] args) {
 

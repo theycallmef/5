@@ -1,3 +1,5 @@
+package domain;
+
 public class JobListing {
     private String title;
     private String description;
