@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f45184e-85c5-433e-9e24-197de42715d8" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/exception/ValidationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/config/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Freelancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/Freelancer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobListing.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/JobListing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobListingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/JobListingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portal.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/Portal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/JobListing.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/JobListing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/5/DatabaseConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/5/Freelancer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/5/JobListing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/5/JobListingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/5/JobListingDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/5/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/5/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/5/Portal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/5/User.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769629467980</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1769870402471</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769870402471</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

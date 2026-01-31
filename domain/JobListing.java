@@ -1,5 +1,7 @@
 package domain;
 
+import exception.ValidationException;
+
 public class JobListing {
     private String title;
     private String description;
@@ -28,7 +30,7 @@ public class JobListing {
 
     public void setBudget(double budget) {
         if (budget < 0) {
-            throw new IllegalArgumentException("Budget cannot be negative");
+            throw new ValidationException("Budget cannot be negative");
         }
         this.budget = budget;
     }
